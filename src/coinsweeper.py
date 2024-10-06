@@ -212,7 +212,7 @@ class Coinsweeper:
         }
 
         json_data = {
-            'gameId': self.game_id,
+            'gameId': self.game_response['id'],
             'bits': self.game_response['rewards']['bits'],
             'bagCoins': self.game_response['rewards']['bagCoins'],
             'gifts': self.game_response['rewards']['gifts'],
