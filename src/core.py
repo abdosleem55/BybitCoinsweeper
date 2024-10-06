@@ -56,7 +56,7 @@ def start_script():
                 # else:
                 #     log(f'{Colors.RED} {res}')
 
-                for __ in range(config(random.randint(config('MIN_GAMES_PER_ACCOUNT', 4), config('MAX_GAMES_PER_ACCOUNT', 9)))):
+                for __ in range(random.randint(config('MIN_GAMES_PER_ACCOUNT', 4), config('MAX_GAMES_PER_ACCOUNT', 9))):
                     res = account.user_info()
 
                     if not res['success']:
